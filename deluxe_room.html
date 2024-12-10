@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deluxe Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .room-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: gold;
+
+        }
+        .room-title {
+            font-family: "Times New Roman";
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .room-description {
+            font-size: 1rem;
+            color: #666;
+            font-family: "Bahnschrift SemiBold";
+        }
+
+        .room-info {
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .room-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top bg-dark bg-body-tertiary " data-bs-theme="dark">
+    <div class="container-fluid">
+        <img src="images/logo.png" alt="Abaseen Hotel Swabi Logo" width="80px" height="80px" style="margin: 0 20px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="rooms.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin_login.php">Admin</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-success btn-custom" type="submit" style="margin-right:5px "><a href="user_login.php" style="text-decoration: none; color: white;">Login</a>
+                </button>
+                <button class="btn btn-outline-success btn-custom" type="submit" style="margin-right: 20px"><a href="user_signup.php" style="text-decoration: none; color: white;">Sign Up</a>
+
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!---navbar ends here--->
+
+<!---hero--->
+
+<div class="px-4 py-5 text-center text-body-emphasis hero-section">
+    <h1 class="display-5 fw-bold text-body-emphasis">Deluxe Room</h1>
+    <div class="col-lg-6 mx-auto">
+        <p>A step up from the standard room, often with better views, more space, and additional amenities.</p>
+    </div>
+</div>
+
+<!--room details--->
+
+
+
+
+<div class="container py-5">
+    <div class="row">
+        <!-- Left side: Room details -->
+        <div class="col-md-8">
+            <div class="room-title">Single Room</div>
+            <div class="room-info">
+                <span><i class="fa fa-bed"></i> 30 sqm</span> &nbsp;|&nbsp;
+                <span><i class="fa fa-users"></i> 2 Person</span>
+            </div>
+            <div class="room-price">145$</div>
+            <p class="room-description">
+                Our elegantly appointed rooms and suites are designed to offer the utmost in comfort and style. Each room features modern amenities, plush furnishings, and thoughtful touches to ensure a relaxing stay.
+            </p>
+            <p class="room-description">
+                Indulge in a culinary journey at our on-site restaurants, where our talented chefs create mouthwatering dishes using the freshest local ingredients. Start your day with a sumptuous breakfast, enjoy a leisurely lunch, and savor a gourmet dinner in an elegant setting.
+            </p>
+        </div>
+    </div>
+
+    <!-- Row for images below the text -->
+    <div class="row">
+        <div class="col-md-4 room-image">
+            <img src="images/rooms%20(3).webp" alt="Room Image 1">
+        </div>
+        <div class="col-md-4 room-image">
+            <img src="images/rooms%20(4).webp" alt="Room Image 2">
+        </div>
+    </div>
+</div>
+
+<!-- room services icons -->
+<div class="container my-5">
+    <!-- Heading -->
+    <h2 class="mb-4">Room Amenities</h2>
+
+    <!-- Icons with Names -->
+    <div class="row">
+        <!-- Feature 1 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-wifi feature-icon me-3"></i>
+            <p class="feature-name">Free Wi-Fi</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-cup-hot feature-icon me-3"></i>
+            <p class="feature-name">Room Service</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-tv feature-icon me-3"></i>
+            <p class="feature-name">Flat-Screen TV</p>
+        </div>
+        <!-- Feature 4 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-battery-charging feature-icon me-3"></i>
+            <p class="feature-name">Power Backup</p>
+        </div>
+        <!-- Feature 5 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-door-open feature-icon me-3"></i>
+            <p class="feature-name">Access Control</p>
+        </div>
+        <!-- Feature 6 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-shield-check feature-icon me-3"></i>
+            <p class="feature-name">24/7 Security</p>
+        </div>
+        <!-- Feature 7 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-snow feature-icon me-3"></i>
+            <p class="feature-name">Air Conditioning</p>
+        </div>
+        <!-- Feature 8 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-bicycle feature-icon me-3"></i>
+            <p class="feature-name">Bike Rentals</p>
+        </div>
+        <!-- Feature 9 -->
+        <div class="col-lg-4 col-md-6 d-flex align-items-center mb-3">
+            <i class="bi bi-broadcast feature-icon me-3"></i>
+            <p class="feature-name">Satellite Channels</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container my-5">
+    <!-- Section Heading -->
+    <h2 class="mb-4">Room Features</h2>
+
+    <!-- Room Features and Image -->
+    <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-lg-6 mb-3">
+            <img src="images/hero-image%20(2).jpg" class="img-fluid" alt="Room">
+        </div>
+
+        <!-- Right Features List -->
+        <div class="col-lg-6">
+            <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle me-2"></i> Children and extra beds</li>
+                <li><i class="bi bi-check-circle me-2"></i> Coffee/Tea Maker</li>
+                <li><i class="bi bi-check-circle me-2"></i> Climate Control</li>
+                <li><i class="bi bi-check-circle me-2"></i> High-End Bedding</li>
+                <li><i class="bi bi-check-circle me-2"></i> Art and Decor</li>
+                <li><i class="bi bi-check-circle me-2"></i> Smart Technology</li>
+            </ul>
+            <p class="mt-4">Our elegantly appointed rooms and suites are designed to offer the utmost in comfort and style. Each room features modern amenities, plush furnishings, and thoughtful touches to ensure a relaxing stay.</p>
+        </div>
+    </div>
+</div>
+
+<!---similar rooms section-->
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Similar Rooms</h2>
+    <div class="row">
+        <!-- Executive Room -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/similar-rooms%20(1).webp" class="card-img-top" alt="Executive Room">
+                <div class="card-body">
+                    <h5 class="card-title">Executive Room</h5>
+                    <p class="card-text">35 sqm | 5 Person</p>
+                    <p class="card-text">120$</p>
+                    <a href="executive_room.html"><a href="#" class="btn btn-outline-success btn-custom-v">Discover More</a></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Room -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/similar-rooms%20(2).webp" class="card-img-top" alt="Single Room">
+                <div class="card-body">
+                    <h5 class="card-title">Single Room</h5>
+                    <p class="card-text">35 sqm | 5 Person</p>
+                    <p class="card-text">140$</p>
+                    <a href="single_room.html"><a href="#" class="btn btn-outline-success btn-custom-v">Discover More</a></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Triple Room -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <img src="images/similar-rooms%20(3).webp" class="card-img-top" alt="Triple Room">
+                <div class="card-body">
+                    <h5 class="card-title">Double Room</h5>
+                    <p class="card-text">35 sqm | 5 Person</p>
+                    <p class="card-text">122$</p>
+                    <a href="double_room.html"><a href="#" class="btn btn-outline-success btn-custom-v">Discover More</a></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!---- newletter -->
+<div class="container my-5">
+    <div class="row align-items-center text-center text-md-start">
+        <div class="col-md-4">
+            <h2 class="newsletter-heading">Join Our Newsletter</h2>
+        </div>
+        <div class="col-md-5">
+            <input
+                    type="email"
+                    class="form-control newsletter-input"
+                    placeholder="Enter your email"
+                    required>
+        </div>
+        <div class="col-md-3">
+            <button
+                    type="submit"
+                    class="btn btn-outline-success btn-custom-v">
+                Subscribe
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----footer---->
+<footer>
+    <div class="container py-5 text-white">
+        <div class="row">
+            <!-- Logo and Description -->
+            <div class="col-md-3 mb-4">
+                <a href="index.html">
+                    <img class="footer__logo" src="images/logo.png" alt="footer logo" width="80px" height="80px">
+                </a>
+                <p class="font-sm mt-3">
+                    Each room features plush bedding, high-quality linens, and a selection to ensure a restful night's
+                    sleep.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h3 class="widget__title">Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none" aria-label="Rooms & Suites">Rooms &amp; Suites</a></li>
+                    <li><a href="#" class="text-decoration-none" aria-label="Dining">Dining</a></li>
+                    <li><a href="#" class="text-decoration-none" aria-label="Spa & Wellness">Spa &amp; Wellness</a></li>
+                    <li><a href="#" class="text-decoration-none" aria-label="Special Offers">Special Offers</a></li>
+                </ul>
+            </div>
+
+            <!-- Guest Service -->
+            <div class="col-md-3 mb-4">
+                <h3 class="widget__title">Guest Service</h3>
+                <ul class="list-unstyled">
+                    <li style="color: white">24/7 Front Desk</li>
+                    <li style="color: white">Parking</li>
+                    <li style="color: white">Room Service</li>
+                    <li style="color: white">Free Wi-Fi</li>
+                    <li style="color: white">Concierge Service</li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-3 mb-4">
+                <h3 class="widget__title">Contact Us</h3>
+                <ul class="list-unstyled">
+                    <li><a href="tel:+92327550318" class="text-decoration-none" aria-label="Phone Number"><i
+                            class="flaticon-phone-flip me-2"></i>+92327550318</a></li>
+                    <li><a href="mailto:coderwiz143@gmail.com" class="text-decoration-none"
+                           aria-label="Email Address"><i class="flaticon-envelope me-2"></i>coderwiz143@gmail.com</a>
+                    </li>
+                    <li><a href="#" class="text-decoration-none" aria-label="Address"><i
+                            class="flaticon-marker me-2"></i>Abaseen Hotel Terbela Dam Swabi</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="bg-dark py-3 text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Copyright Text -->
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0">&copy; 2024 Abaseen. All rights reserved.</p>
+                </div>
+                <!-- Social Links -->
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer__social__link">
+                        <a href="#" aria-label="Facebook" class="text-decoration-none mx-2">Facebook</a>
+                        <a href="#" aria-label="LinkedIn" class="text-decoration-none mx-2">LinkedIn</a>
+                        <a href="#" aria-label="Twitter" class="text-decoration-none mx-2">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
